@@ -1,9 +1,15 @@
-const quotes = ["There's no I in Teamocyl, at least not where you'd think", "Take a look at banner Michael!", "There's always money in the banana stand!", "Baby you got a stew going", "I blue myself", "Her?", "She calls it a mayon-egg", "The army had a half day", "It ain't easy being white", "Would anyone like a banger in the mouth?", "I don't care for Gob", "Watch out for that loose seal!", "Steve Holt!", "Say goodbye to these!", "It's one banana, Michael. What can it cost, ten dollars?", "Here's some money, go see a Star War.", "I'm a monster!", "Family love Michael", "Mr. F", "I've made a huge mistake", "Pop-Pop gets a treat?", "AAAAAGGHH Gene Parmesan!", "And that's why you always leave a note", "Marry me!", "There are dozens of us!", "Get me a vodka and a piece of toast."];
+const bands = ["The Stone Roses", "Nirvana", "Arctic Monkeys", "The Cure", "Foo Fighters", "Motorhead", "Paramore", "Talking Heads", "Green Day", "Tame Impala", "The White Stripes", "Radiohead", "Rage Against the Machine", "The Smiths", "Joy Division", "The Clash"];
+const singers = ["Kurt Cobain", "Ian Brown", "Alex Turner", "Hayley Williams", "Dave Grohl", "David Byrne", "Billie Joe Armstrong", "Kevin Parker", "Jack White", "Thom Yorke", "Zack de la Rocha", "Morrissey", "Ian Curtis", "Joe Strummer"];
+const songs = ["Fools Gold", "Brick by Boring Brick", "Teddy Picker", "A Forest", "Everlong", "Ace of Spades", "Psycho Killer", "Elephant", "Seven Nation Army", "Creep", "Killing in the Name", "This Charming Man", "Love Will Tear Us Apart", "Rock the Casbah"];
 
-const randomIndex = Math.floor(Math.random() * quotes.length);
+let bandIndex = Math.floor(Math.random() * bands.length);
+let singerIndex = Math.floor(Math.random() * singers.length);
+let songIndex = Math.floor(Math.random() * songs.length);
 
-const pickQuote = () => {
-  console.log(quotes[randomIndex]);
+const bandName = bands[bandIndex];
+const leadSinger = singers[singerIndex];
+const songTitle = songs[songIndex];
+const finalQuote = () => {
+  console.log(`Omg, I love ${bandName}. ${leadSinger} is a genius. My favourite song is ${songTitle} :)`);
 }
-
-pickQuote();
+finalQuote();
